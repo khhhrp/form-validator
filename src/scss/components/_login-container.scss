@@ -38,9 +38,17 @@
     background-color: #fff;
     padding: 10px 28px;
     border-radius: 8px;
+    transition-property: border-color, background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
 
     @media (hover: hover) {
       cursor: pointer;
+
+      &:hover {
+        border-color: #003465;
+        background-color: rgba(#003465, 0.3);
+      }
     }
   }
 

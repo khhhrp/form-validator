@@ -6,6 +6,7 @@
   row-gap: 16px;
 
   &__input-group {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@
     padding: 8px 16px;
     border: 1px solid #bcbec0;
     border-radius: 5px;
-    color: #003465;
+    color: #000;
     transition: border-color 200ms ease;
 
     &::placeholder {
@@ -31,8 +32,25 @@
       font-size: 13px;
     }
 
+    &:not(:placeholder-shown) {
+      &:invalid {
+        border-color: red;
+      }
+    }
+
+    &:valid {
+      border-color: green;
+    }
+
     &:focus {
-      border-color: #003465;
+      color: #fff;
+      &:invalid {
+        background-color: rgba(red, 0.2);
+      }
+
+      &:valid {
+        background-color: rgba(green, 0.2);
+      }
     }
 
     &--pass {
@@ -40,7 +58,7 @@
     }
   }
 
-  &__show-btn {
+  &__toggle-btn {
     width: 18px;
     aspect-ratio: 1;
     display: flex;
@@ -53,6 +71,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    color: #bcbec0;
 
     img {
       display: block;
@@ -93,7 +112,7 @@
     background-color: #003465;
     color: #fff;
     border: 1px solid transparent;
-    transition-property: color, background-color, border-color;
+    transition-property: background-color, border-color;
     transition-duration: 200ms;
     transition-timing-function: ease;
 
@@ -101,10 +120,24 @@
       cursor: pointer;
 
       &:hover {
-        color: #003465;
-        background-color: #fff;
+        background-color: rgba(#003465, 0.3);
         border-color: #003465;
       }
     }
   }
+}
+
+// for eye image
+.active {
+  .on {
+    display: block;
+  }
+
+  .off {
+    display: none;
+  }
+}
+
+.on {
+  display: none;
 }

@@ -1,15 +1,18 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  color: #fff;
-  background-image: radial-gradient(#0085ff, #003465);
-  min-height: 100vh;
   font-family: "Poppins", serif;
-  overflow-x: hidden;
+  color: #fff;
 }
 
 .text-center {
   text-align: center;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-image: radial-gradient(#0085ff, #003465);
+  overflow-x: hidden;
 }

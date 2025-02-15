@@ -1,4 +1,4 @@
-.wrapper {
+.container {
   position: relative;
   display: flex;
   align-items: center;
@@ -17,6 +17,7 @@
     display: block;
     position: absolute;
     mix-blend-mode: luminosity;
+    user-select: none;
 
     &--first {
       top: -103px;
