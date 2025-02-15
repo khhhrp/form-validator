@@ -1,0 +1,62 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1356px;
+  width: 100%;
+  min-height: 768px;
+  padding: 100px 50px;
+  background-image: radial-gradient(#0085ff, #003465);
+  border-radius: 24px;
+  box-shadow: 355px 556px 264px 0 rgba(#000, 0.01),
+    200px 312px 223px 0 rgba(#000, 0.05), 89px 139px 165px 0 rgba(#000, 0.09),
+    22px 35px 91px 0 rgba(#000, 0.1);
+
+  &__img {
+    display: block;
+    position: absolute;
+    mix-blend-mode: luminosity;
+
+    &--first {
+      top: -103px;
+      left: 364px;
+      mix-blend-mode: normal;
+    }
+
+    &--second {
+      top: 216px;
+      left: 280px;
+    }
+
+    &--third {
+      top: 80px;
+      right: 208px;
+    }
+
+    &--fourth {
+      top: 330px;
+      left: 274px;
+    }
+
+    &--fifth {
+      top: 456px;
+      left: 312px;
+    }
+
+    &--sixth {
+      top: 530px;
+      right: 280px;
+    }
+
+    &--seventh {
+      bottom: -156px;
+      left: -100px;
+    }
+
+    &--eighth {
+      bottom: -122px;
+      right: -200px;
+    }
+  }
+}

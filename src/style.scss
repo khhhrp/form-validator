@@ -1,1 +1,8 @@
-@use "./scss/custom-reset";
+//base
+@use "./scss/base/custom-reset";
+@use "./scss/base/general";
+
+//components
+@use "./scss/components/wrapper";
+@use "./scss/components/login-container";
+@use "./scss/components/form";

@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.scss">
-  <title>Document</title>
-</head>
-<body>
-<script src="./src/js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.scss" />
+    <title>Form with validation</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        class="wrapper__img wrapper__img--first"
+        draggable="false"
+        src="./src/img/decor1.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--second"
+        draggable="false"
+        src="./src/img/decor2.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--third"
+        draggable="false"
+        src="./src/img/decor3.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--fourth"
+        draggable="false"
+        src="./src/img/decor4.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--fifth"
+        draggable="false"
+        src="./src/img/decor5.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--sixth"
+        draggable="false"
+        src="./src/img/decor6.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--seventh"
+        draggable="false"
+        src="./src/img/decor7.svg"
+        alt=""
+      />
+      <img
+        class="wrapper__img wrapper__img--eighth"
+        draggable="false"
+        src="./src/img/decor8.svg"
+        alt=""
+      />
+      <div class="login-container">
+        <h2 class="login-container__title text-center">Your logo</h2>
+        <h3 class="login-container__title">Login</h3>
+        <form class="form">
+          <div class="form__input-group">
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="username@gmail.com"
+            />
+          </div>
+          <div class="form__input-group">
+            <label class="form__label" for="password">Password</label>
+            <div class="form__input-password">
+              <input
+                class="form__input form__input--pass"
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Password"
+              />
+              <button type="button" class="form__show-btn">
+                <img src="./src/img/eye.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <a href="#!" class="form__link">Forgot Password?</a>
+          <button class="form__btn" type="button">Sign in</button>
+        </form>
+        <p class="login-container__text text-center">or continue with</p>
+        <div class="login-container__btns-group">
+          <button class="login-container__btn" type="button">
+            <img src="./src/img/google.svg" alt="google" />
+          </button>
+          <button class="login-container__btn" type="button">
+            <img src="./src/img/github.svg" alt="github" />
+          </button>
+          <button class="login-container__btn" type="button">
+            <img src="./src/img/facebook.svg" alt="facebook" />
+          </button>
+        </div>
+        <p class="login-container__text login-container__text--small">
+          Don’t have an account yet?
+          <a class="login-container__link" href="#!">Register for free</a>
+        </p>
+      </div>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
