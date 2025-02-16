@@ -9,6 +9,15 @@
   padding: 40px 80px;
   box-shadow: 0 0 0 2px #5882c1;
 
+  @media (width < 425px) {
+    padding: 20px 40px;
+    min-width: 100%;
+    min-height: 100dvh;
+    border-radius: 0px;
+    border: none;
+    justify-content: center;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 24px;

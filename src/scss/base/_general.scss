@@ -8,11 +8,14 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
+  min-height: 100dvh;
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 50px;
   background-image: radial-gradient(#0085ff, #003465);
-  overflow: hidden;
+
+  @media (width < 768px) {
+    padding: 0;
+  }
 }
