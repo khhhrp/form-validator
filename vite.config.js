@@ -23,6 +23,9 @@ export default defineConfig({
       minify: true,
     }),
   ],
+  css: {
+    postcss: "./postcss.config.js",
+  },
   build: {
     rollupOptions: {
       input: {
