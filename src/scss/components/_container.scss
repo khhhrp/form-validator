@@ -6,7 +6,7 @@
   max-width: 1356px;
   width: 100%;
   min-height: 768px;
-  padding: 100px 50px;
+  padding: 15px;
   background-image: radial-gradient(#0085ff, #003465);
   border-radius: 24px;
   box-shadow: 355px 556px 264px 0 rgba(#000, 0.01),
@@ -18,6 +18,7 @@
     position: absolute;
     mix-blend-mode: luminosity;
     user-select: none;
+    -webkit-user-select: none;
 
     &--first {
       top: -103px;
